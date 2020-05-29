@@ -1,0 +1,23 @@
+<div class="dropdown">
+  <button type="button" class="btn btn-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <ion-icon name="ellipsis-vertical"></ion-icon>
+  </button>
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#staticBackdrop">Clear list</a>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-left">
+        Are you sure you want to clear your list?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" (click)="clearList()" data-dismiss="modal">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>
