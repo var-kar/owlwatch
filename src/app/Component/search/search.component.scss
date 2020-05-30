@@ -1,0 +1,23 @@
+@use '../../../base';
+
+$rounded-corners: 18px;
+$border: none;
+
+//mixin
+@mixin midnightColours() {
+	background-color: base.$element-background-color;
+	color: base.$text-color;
+	border: $border;
+}
+
+span.input-group-text {
+	@include midnightColours();
+	border-radius: $rounded-corners;
+}
+
+input.form-control {
+	@include midnightColours();
+}
+.stay-open {
+	display: block !important;
+}

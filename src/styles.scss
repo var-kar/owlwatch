@@ -11,7 +11,29 @@ body {
 	color: base.$text-color;
 }
 
-ion-icon {
+div.dropdown-menu,
+div.modal-content {
+	background-color: base.$element-background-color;
+}
+
+div.dropdown-menu a,
+div.modal-content {
 	color: base.$text-color;
-	font-size: 2em;
+}
+
+div.dropdown-menu a:hover {
+	background-color: base.$dark-hover-variance;
+	color: base.$text-color;
+}
+
+div.modal-footer {
+	border-top: 1px solid base.$dark-hover-variance;
+}
+
+::-webkit-input-placeholder {
+	color: base.$placeholder-text !important;
+}
+
+input:focus {
+	outline: none;
 }

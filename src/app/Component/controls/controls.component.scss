@@ -1,24 +1,6 @@
 @use '../../../base';
-.dropdown {
-	margin-top: 8px;
-}
-.dropdown-menu {
-	background-color: base.$element-background-color;
-}
 
-.dropdown-menu a {
+ion-icon {
 	color: base.$text-color;
-}
-
-.dropdown-menu a:hover {
-	background-color: base.$dark-hover-variance;
-}
-
-.modal-content {
-	background-color: base.$element-background-color;
-	color: base.$text-color;
-}
-
-div.modal-footer {
-	border-top: 1px solid base.$dark-hover-variance;
+	font-size: 2em;
 }
